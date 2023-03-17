@@ -1,0 +1,648 @@
+* {
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  font-size: 20px;
+  z-index: 1;
+  background-color: #fff;
+  width: 100%;
+  height: 1.55em;
+  text-align: center;
+  align-content: center;
+}
+
+header a{
+  text-decoration: none;
+  color: black;
+}
+
+header li{
+    display: inline;
+    padding-right: .5em;
+}
+
+header li:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  color: #5384BD;
+}
+
+#main_copy {
+
+}
+
+@media screen and (max-width: 1270px) {
+  #main_copy{
+    padding: .5em;
+  }
+}
+
+#main_copy h1 {
+  text-align: center;
+}
+
+#main_copy h2 {
+  text-align: center;
+}
+
+#main_copy {
+    align-content: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 22px;
+}
+
+/*---------- UTILITIES ----------*/
+
+/* .clearfix {
+	*zoom: 1;
+
+	&:before, &:after {
+		content: ' ';
+		display: table; 
+	}
+
+	&:after { clear: both; }
+
+} */
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    
+    /* &:hover {
+      color: $color-link-hover;
+    } */
+    
+  }
+  
+  article {
+    display: block;
+  }
+  
+  h2 {
+    font-size: 2em;
+    line-height: 1.25em;
+    margin: 0 0 .25em 0;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.33em;
+    margin: 0 0 .33em 0;
+  }
+  
+  h4 {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 0 0 .5em 0;
+  }
+  
+  p {
+    margin: 0 0 .5em 0;
+  }
+  
+  /*---------- UTILITIES ----------*/
+  
+  /* .clearfix {
+      *zoom: 1;
+  
+      &:before, &:after {
+          content: ' ';
+          display: table; 
+      }
+  
+      &:after { clear: both; }
+  
+  } */
+  
+  /*---------- GRID ----------*/
+  
+  /* .container {
+      @extend .clearfix;
+      margin: 0 auto;
+      width: $grid-container;
+  } */
+  
+  /*---------- HEADER ----------*/
+  
+  .header {
+      padding: 1em 0;
+  }
+  
+  /*---------- MAIN ----------*/
+  
+  .main {
+    margin-top: 3em;
+  }
+  
+  /*---------- NAVIGATIONS ----------*/
+  
+  .nav-main {
+    float: right;
+    
+    /* ul {
+      @extend .clearfix;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    li {
+      float: left;
+      margin: 0 .5em;
+      
+      &.first {
+        margin-left: 0;
+      }
+      
+      &.last {
+        margin-right: 0;
+      }
+      
+    }
+    
+    a {
+      color: $color;
+      display: inline-block;
+    } */
+    
+  }
+  
+  /*---------- POSTS ----------*/
+  
+  .post {
+    margin-bottom: 2em;
+  }
+  
+  /*---------- BANNER ----------*/
+  
+  /* INFO
+     Banner Graphic must be at least the height of .banner + height of parent element (in this case the header)
+     e.g.  .banner { height: 22em }
+           .header { height: 3.5em }
+           22em + 3.5em = 25.5em
+           25.5em * 16px = 408px
+           => Banner Graphic must be at least 408px height!
+  
+  Graphic: http://unsplash.com/post/81123587039/download-by-wojtek-witkowski
+  */
+  
+  .banner {
+      /* background: url(https://i.imgur.com/1DRTAiD.jpg) no-repeat fixed 50% 0; */
+      /* background: url(./vlad-grebenyev-7eCBiZgyr4E-unsplash.jpg) no-repeat fixed 50% 0; */
+      background-image: url(./body-kit-gad1e63f0d_1280.jpg);
+      /* height: 22em; */
+      height: 30em;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      background-size: cover;
+      background-position: 0 45%;
+  }
+
+  .banner-2 {
+    /* background: url(https://i.imgur.com/1DRTAiD.jpg) no-repeat fixed 50% 0; */
+    background: url(./hp-carlift.jpg) no-repeat fixed 70% 0;
+    /* height: 22em; */
+    height: 32em;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-size: cover;
+  }
+
+  @media screen and (max-width: 1270px) {
+    .banner-2{
+      background-position: 30% 10%;
+    }
+  }
+
+  .banner-3 {
+    /* background: url(https://i.imgur.com/1DRTAiD.jpg) no-repeat fixed 50% 0; */
+    background: url(https://jaysautoservice.com/images/DSC_1243.JPG) no-repeat fixed 70% 0;
+    /* height: 22em; */
+    height: 32em;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1270px) {
+  .banner-3{
+    background-position: 0 45%;
+  }
+}
+  
+.banner-text {
+  color: #fff;
+  font-size: 1.25em;
+  left: 0;
+  position: absolute;
+  top: 55%;
+  text-align: center;
+  text-shadow: 0 0px 2px rgba(0, 0, 0, .5);
+  width: 100%; 
+}
+
+.background-banner{
+/* background-color: #5384BD; */
+width: 35%;
+margin-left: auto;
+margin-right: auto;
+border-radius: 10px;
+/* opacity: .9; */
+}
+
+/* Services Home Page Start */
+
+#hp-services{
+display: flex; 
+width: 100%;
+height: 600px;
+justify-content: center;
+}
+
+@media screen and (max-width: 1270px) {
+  #hp-services{
+    margin: .5em;
+  }
+}
+
+#hp-services img{
+width: 100px;
+height: 100px;
+}
+
+.service-header{
+  text-align: center;
+  justify-content: center;
+}
+
+.service-icons{
+  display: grid;
+}
+
+.service-copy{
+  max-width: 450px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+/* Services Home Page End */
+
+.visit {
+  text-align: center;
+}
+
+.brands {
+  padding-bottom: 2em;
+}
+
+
+.brands img{
+display: block;
+position: relative;
+height: 320px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.brands h2{
+  text-align: center;
+}
+  
+@media screen and (max-width: 970px) {
+  .brands{
+    display: none;
+  }
+}
+
+/* Services Page Start */
+#service-header {
+  text-align: center;
+  padding-top: 2em;
+}
+
+#service-pg-copy {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1.5em;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1270px) {
+  #service-pg-copy{
+    margin: .5em;
+  }
+
+  .contact-service{
+    margin: .5em;
+  }
+}
+
+/* Services Page Start */
+  #services{
+  display: flex; 
+  width: 100%;
+  height: 600px;
+  justify-content: center;
+  }
+
+  .banner-4 {
+  /* background: url(https://i.imgur.com/1DRTAiD.jpg) no-repeat fixed 50% 0; */
+  background: url(https://images.pexels.com/photos/4315570/pexels-photo-4315570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat fixed 50% 70%;
+  /* height: 22em; */
+  height: 32em;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-size: cover;
+  background-position: 25% 60%;
+}
+
+.banner-5 {
+  /* background: url(https://i.imgur.com/1DRTAiD.jpg) no-repeat fixed 50% 0; */
+  background: url(automobile-lift.jpg) no-repeat fixed 50% 100%;
+  /* height: 22em; */
+  height: 32em;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-size: cover;
+  background-position: 25% 90%;
+}
+
+
+.contact-service {
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+
+}
+
+.contact-service p {
+  max-width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3em;
+}
+
+
+.service-pg-icons{
+  display: grid;
+  padding-top: 3em;
+}
+
+.service-copy-pg {
+  max-width: 450px;
+  padding-left: 10px;
+  padding-top: 3em;
+  font-size: 16px;
+}
+
+/* Services Page End */
+
+/* Pictures Page Start */
+:root {
+/* Base font size */
+font-size: 10px;
+}
+  
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+  
+body {
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+  
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
+}
+  
+.heading {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  padding: 3.5rem 0;
+  color: #1a1a1a;
+}
+  
+.heading span {
+  display: block;
+}
+  
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  /* Compensate for excess margin on outer gallery flex items */
+  margin: -1rem -1rem;
+}
+  
+.gallery-item {
+  /* Minimum width of 24rem and grow to fit available space */
+  flex: 1 0 24rem;
+  /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+  margin: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+  
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
+}
+  
+.gallery-image:hover {
+  transform: scale(1.15);
+}
+  
+/*
+  
+The following rule will only run if your browser supports CSS grid.
+  
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+  
+*/
+  
+@supports (display: grid) {
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  grid-gap: 2rem;
+}
+  
+.gallery,
+.gallery-item {
+  margin: 0;
+}
+}
+  
+/* Pictures Page End */
+
+/* Software Pg Start */
+
+#lambda-copy{
+  font-size: 18px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+@media screen and (max-width: 1270px) {
+  #lambda-copy{
+    padding: .5em;
+  }
+
+  #lambda-container{
+    display: none;
+  }
+}
+
+
+#lambda-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 4em;
+}
+
+.lambda-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+}
+
+.download{
+  text-align: center;
+  padding-top: 1em;
+  font-size: 16px;
+}
+
+/* Software Pg End */
+
+/* Contact Pg Start */
+
+#contact-pg body{
+  padding-top: 10em;
+}
+
+.mapouter{
+  padding-top: 4em;
+}
+
+.contact-conatiner p{
+  max-width: 800px;
+  display: inline-flex;
+  padding-bottom: 2em;
+}
+
+#contact-pg-copy{
+  font-size: 16px;
+  text-align: center;
+}
+
+#contact-pg-copy h1{
+  padding-top: 2em;
+}
+
+
+/* Contact Pg End */
+
+/* Footer Start */
+
+.footer-info {
+  background-color: #3671B5;
+  width: 100%;
+  height: 260px;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+footer h2{
+  padding-top: 1em;
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+}
+
+footer .contact{
+  float: left;
+  padding-left: 1.5em;
+  color: #fff;
+}
+
+footer .hours{
+  float: right;
+  color: #fff;
+}
+
+footer  .copyright{
+  display: block;
+  text-align: center;
+  padding-top: 10em;
+  color: white;
+}
+
+@media screen and (min-width: 970px) {
+
+  .copyright{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 970px) {
+
+  .hours{
+    padding-right: 1.5em;
+  }
+}
+
+@media screen and (max-width: 970px) {
+
+  #footer-container{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+  }
+
+  .footer-info{
+    display: grid;
+    height: 25em;
+    text-align: center;
+  }
+
+  .hours{
+    padding-left: 1.5em;
+  }
+}
+/* Footer End */
